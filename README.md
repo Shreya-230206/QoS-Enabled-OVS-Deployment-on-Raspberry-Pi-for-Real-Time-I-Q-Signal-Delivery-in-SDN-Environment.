@@ -12,6 +12,7 @@ This repository provides **step-by-step instructions** to set up a QoS-enabled n
 ## Steps
 1. [Install Ryu Controller](Install_Ryu.md)
 2. [Raspberry as an OVS configuration](Raspberry_Configuration.md)
+3. [Create Queues for each host](Queue_Creation.md) 
 
 ---
 
