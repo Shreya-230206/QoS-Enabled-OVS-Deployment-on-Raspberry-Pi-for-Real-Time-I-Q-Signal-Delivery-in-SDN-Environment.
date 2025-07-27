@@ -13,7 +13,8 @@ This repository provides **step-by-step instructions** to set up a QoS-enabled n
 1. [Install Ryu Controller](Install_Ryu.md)
 2. [Raspberry as an OVS configuration](Raspberry_Configuration.md)
 3. [Create Queues for each host](Queue_Creation.md) 
-4. [Dynamic Flows installation](Ryu_Application.py)
+4. [Connect hosts to switch ports](Network_Topology.md)
+5. [Dynamic Flows installation with Ryu application](Ryu_Application.py)
 	###### This Ryu application is built by extending SimpleSwitch13 and provides dynamic flow installation with QoS queue prioritization for specific hosts in a 	Software-Defined Network (SDN). It retains normal L2 switching behavior (learning switch) and adds special treatment for traffic from a designated host (h2) 	by directing it into a high-priority queue.
 	###### Features:
 	1. Maintains L2 learning switch behavior
@@ -32,9 +33,6 @@ This repository provides **step-by-step instructions** to set up a QoS-enabled n
 	6.	For Other Hosts
     	1. Default SimpleSwitch13 behavior handles them (no queue set).
     	2. Traffic is forwarded based on learned MAC–port mappings.
-
-5. [Client-Server data transfer](Client_Server_Setup.md)
-
 ---
 
 ## Repository Purpose
