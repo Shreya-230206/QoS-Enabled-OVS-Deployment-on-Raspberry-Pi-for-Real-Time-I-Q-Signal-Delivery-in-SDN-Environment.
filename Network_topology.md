@@ -12,9 +12,11 @@ Host 3 (**server** with IP `10.0.0.30`, Windows PC1), via port **eth0**.
 ---
 
 ### Created Topology Diagram
-![Network_setup](images/topology_without_Controller.png)
+![Network_setup](images/topology_without_Controller.png "Created Network")
 
 *Figure 1: shows actual setup, with two RaspberryPi, as hosts, and a server PC. In the left, RaspberryPi 1’s internal host is 
 connected and, in the right, RaspberryPi 2 is connected.*
 
 ![](images/topology_with_Controller.png)
+
+*Figure 2: set up with controller connected via eth2 of OVS*
