@@ -13,3 +13,12 @@ source ryu-env/bin/activate
 # Upgrade pip and install Ryu
 pip install --upgrade pip
 pip install ryu
+
+Installed Ryu Components
+
+ryu.base.app_manager – Manages the lifecycle of Ryu applications
+ryu.controller – Handles OpenFlow protocol communication with switches
+ryu.ofproto – Defines OpenFlow protocol versions (1.0, 1.3, etc.)
+ryu.lib – Utility libraries (packet parser, topology discovery, hub, etc.)
+ryu.topology – Built-in topology discovery modules using LLDP
+ryu.cmd – CLI tool ryu-manager
