@@ -1,11 +1,11 @@
 # QoS-Enabled-OVS-Deployment-on-Raspberry-Pi-for-Real-Time-I-Q-Signal-Delivery-in-SDN-Environment.
 This project demonstrates how SDN principles, combined with lightweight hardware like Raspberry Pi, can be effectively used to implement host-based prioritization and traffic control. 
-# SDN QoS Tutorial on Raspberry Pi
 
-This repository provides **step-by-step instructions** to set up a QoS-enabled network using:
-- **Ryu SDN Controller**
-- **Open vSwitch on Raspberry Pi**
-- **Flask Web GUI** for monitoring
+## Abstract
+Modern communication systems often involve multiple clients transmitting varying types of data, some of which are more critical or time-sensitive than others. Traditional static network infrastructures lack the flexibility to prioritize traffic based on the sender, leading to performance degradation during congestion. This project addresses this limitation by designing a cost-effective Software-Defined Networking (SDN) testbed using a Raspberry Pi 4 configured as an Open vSwitch (OVS), where traffic from a specific client is dynamically prioritized over others using Quality of Service (QoS) mechanisms.
+A Python-based Ryu SDN controller manages the flow rules and queue assignments on the switch, identifying connected hosts and installing queue-specific rules based on source IP addresses. The prioritized client’s traffic is directed to a high-bandwidth queue, while lower-priority clients are limited to a constrained bandwidth path. The performance of the setup was evaluated using a socket-based client-server model, where multiple clients sent data—both bulk and time-sensitive—to a server. Results show that with SDN-enabled prioritization, the high-priority client consistently achieved higher bandwidth and zero packet loss, even under congestion, while lower-priority clients experienced controlled throughput and packet drops. Without QoS, bandwidth was shared inefficiently, leading to contention and performance degradation.
+This project demonstrates how SDN principles, combined with lightweight hardware like Raspberry Pi, can be effectively used to implement host-based prioritization and traffic control. It provides a flexible, scalable, and low-cost solution suitable for edge computing, real-time systems, and network-aware IoT applications.
+
 
 ---
 
