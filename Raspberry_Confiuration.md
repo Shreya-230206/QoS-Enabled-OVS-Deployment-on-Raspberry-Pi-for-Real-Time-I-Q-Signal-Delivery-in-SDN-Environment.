@@ -73,6 +73,13 @@ $ovs-vsctl add-port br0 h1 –set interface h1 type=internal
 $ip addr add 10.0.0.3/24 dev h1
 
 ---
+### Configured Raspberry
+![Network_setup](images/raspi.png)
+
+*The figure depicts setup of  RaspberryPi configured as an OVS with eth0, eth1, and eth2 as switch ports, where 
+eth0 connects via Ethernet, and eth1 and eth2 use USB-to-Ethernet adapters.*
+
+---
 ## Add Controller:
 
 ### Add controller, set controller’s IP and port at which it runs
@@ -81,3 +88,4 @@ $ovs-vsctl set-controller br0 tcp:<Controller_IP>:6633
 
 ### Verify configuration
 $ovs-vsctl show
+
