@@ -13,6 +13,7 @@ This repository provides **step-by-step instructions** to set up a QoS-enabled n
 1. [Install Ryu Controller](Install_Ryu.md)
 2. [Raspberry as an OVS configuration](Raspberry_Configuration.md)
 3. [Create Queues for each host](Queue_Creation.md) 
+4. [Dynamic Flows installation](Ryu_Application.md) 
 
 ---
 
