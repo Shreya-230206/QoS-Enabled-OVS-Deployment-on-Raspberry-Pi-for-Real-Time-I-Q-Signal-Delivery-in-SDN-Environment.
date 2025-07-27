@@ -12,4 +12,4 @@ Host 3 (**server** with IP `10.0.0.30`, Windows PC1), via port **eth0**.
 ---
 
 ### Created Topology Diagram
-![My_Network_setup](images/topology.png "Topology Diagram")
+![My_Network_setup](images/topology_without_Controller.png)
