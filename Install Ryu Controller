@@ -1,25 +1,26 @@
-Ryu Installation Guide
+# Ryu Installation Guide
 
-Install Ryu (With Virtual Environment)
-```bash
-1. Install dependencies
-sudo apt update
-sudo apt install python3-pip python3-dev python3-venv git -y
+## Install Ryu (With Virtual Environment)
 
-2. Create and activate virtual environment
-python3 -m venv ryu-env
-source ryu-env/bin/activate
+### 1. Install Dependencies
+sudo apt update  
+sudo apt install python3-pip python3-dev python3-venv git -y  
 
-3. Upgrade pip and install Ryu
-pip install --upgrade pip
-pip install ryu
-```
+### 2. Create and Activate Virtual Environment
+python3 -m venv ryu-env  
+source ryu-env/bin/activate  
 
-Installed Ryu Components
+### 3. Upgrade pip and Install Ryu
+pip install --upgrade pip  
+pip install ryu  
 
-ryu.base.app_manager – Manages the lifecycle of Ryu applications
-ryu.controller – Handles OpenFlow protocol communication with switches
-ryu.ofproto – Defines OpenFlow protocol versions (1.0, 1.3, etc.)
-ryu.lib – Utility libraries (packet parser, topology discovery, hub, etc.)
-ryu.topology – Built-in topology discovery modules using LLDP
-ryu.cmd – CLI tool ryu-manager
+---
+
+## Installed Ryu Components
+
+- **ryu.base.app_manager** – Manages the lifecycle of Ryu applications  
+- **ryu.controller** – Handles OpenFlow protocol communication with switches  
+- **ryu.ofproto** – Defines OpenFlow protocol versions (1.0, 1.3, etc.)  
+- **ryu.lib** – Utility libraries (packet parser, topology discovery, hub, etc.)  
+- **ryu.topology** – Built-in topology discovery modules using LLDP  
+- **ryu.cmd** – CLI tool `ryu-manager`
