@@ -1,7 +1,29 @@
 # Ryu Installation Guide
 
-## 1. Install Dependencies
+## Install Ryu (With Virtual Environment)
+
 ```bash
+# Install dependencies
 sudo apt update
 sudo apt install python3-pip python3-dev python3-venv git -y
----
+
+# Create and activate virtual environment
+python3 -m venv ryu-env
+source ryu-env/bin/activate
+
+# Upgrade pip and install Ryu
+pip install --upgrade pip
+pip install ryu
+
+Installed Ryu Components
+ryu.base.app_manager – Manages the lifecycle of Ryu applications
+
+ryu.controller – Handles OpenFlow protocol communication with switches
+
+ryu.ofproto – Defines OpenFlow protocol versions (1.0, 1.3, etc.)
+
+ryu.lib – Utility libraries (packet parser, topology discovery, hub, etc.)
+
+ryu.topology – Built-in topology discovery modules using LLDP
+
+ryu.cmd – CLI tool ryu-manager
