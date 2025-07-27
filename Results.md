@@ -8,9 +8,10 @@ The system was evaluated using socket programming to simulate IQ signal traffic 
 
 ### **1. Server Log Analysis**
 - **Figure 1**: Server log showing results **without** implementing QoS
--   
-- **Figure 2**: Server log showing results **with** QoS implementation  
+  ![Network_setup](images/server_log.png "Created Network")
 
+- **Figure 2**: Server log showing results **with** QoS implementation  
+  ![Network_setup](images/server_log_QoS.png "Created Network")
 ---
 
 ### **2. Bandwidth Utilization**
@@ -18,9 +19,11 @@ The system was evaluated using socket programming to simulate IQ signal traffic 
 - Ensures high throughput for Client2.  
 
 **Graphs**:  
-- **Graph 1**: Bandwidth allocation for clients (no QoS)  
+- **Graph 1**: Bandwidth allocation for clients (no QoS)
+  ![Network_setup](images/bandwidth_allocation.png "Created Network")
+  
 - **Graph 2**: Bandwidth allocation with Client2 prioritization  
-
+  ![Network_setup](images/bandwidth_allocation_QoS.png "Created Network")
 ---
 
 ### **3. Data Loss**
@@ -33,9 +36,11 @@ The system was evaluated using socket programming to simulate IQ signal traffic 
   - Client2 → **7%**  
 
 **Graphs**:  
-- **Graph 3**: Buffer loss (no prioritization)  
+- **Graph 3**: Buffer loss (no prioritization)
+  ![Network_setup](images/bufferloss.png "Created Network")
+  
 - **Graph 4**: Buffer loss (with Client2 prioritization)  
-
+  ![Network_setup](images/bufferloss_QoS.png "Created Network")
 ---
 
 ### **4. Queue Statistics (Port eth0)**
@@ -47,6 +52,7 @@ The system was evaluated using socket programming to simulate IQ signal traffic 
   - Bytes → 1.6 billion  
 
 **Graph 5**: Packets and bytes processed by each queue for two clients.  
+  ![Network_setup](images/queue_stats.png "Created Network")
 
 ---
 
