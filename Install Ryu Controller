@@ -1,18 +1,19 @@
-# Ryu Installation Guide
+Ryu Installation Guide
 
-## Install Ryu (With Virtual Environment)
+Install Ryu (With Virtual Environment)
 ```bash
-# Install dependencies
+1. Install dependencies
 sudo apt update
 sudo apt install python3-pip python3-dev python3-venv git -y
 
-# Create and activate virtual environment
+2. Create and activate virtual environment
 python3 -m venv ryu-env
 source ryu-env/bin/activate
 
-# Upgrade pip and install Ryu
+3. Upgrade pip and install Ryu
 pip install --upgrade pip
 pip install ryu
+```
 
 Installed Ryu Components
 
