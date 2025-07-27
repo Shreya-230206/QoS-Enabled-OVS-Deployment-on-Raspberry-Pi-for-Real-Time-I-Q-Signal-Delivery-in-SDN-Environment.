@@ -3,10 +3,13 @@
 ## 1. Install Dependencies
 ```bash
 $ sudo apt update ; sudo apt install python3-pip python3-dev python3-venv git -y
-
+---
+## 2. Create and activate virtual environment
 $ python3 -m venv ryu-env ; source ryu-env/bin/activate
-
+---
+## 3. Install Ryu
 $ pip install --upgrade pip ; pip install ryu
+---
 
 This will install the following Python packages:
 
