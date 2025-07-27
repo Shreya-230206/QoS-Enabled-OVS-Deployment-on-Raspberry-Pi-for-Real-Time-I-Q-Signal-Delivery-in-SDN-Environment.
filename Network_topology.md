@@ -11,7 +11,7 @@ Host 3 (**server** with IP `10.0.0.30`, Windows PC1), via port **eth0**.
 
 ---
 
-### Created Topology Diagram
+### Created Network
 ![Network_setup](images/topology_without_Controller.png "Created Network")
 
 *Figure 1: shows actual setup, with two RaspberryPi, as hosts, and a server PC. In the left, RaspberryPi 1’s internal host is 
